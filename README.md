@@ -1,12 +1,21 @@
-# todo
+# Palace
 
-# refactor to MVC architecture specifically with
-# HumanPlayer class’s methods such as select_action and _select_card_or_pickup
+This is a card game where the obejct of the game is to get rid of all your card quicker than your opponent.
 
-# implement swap face cards and hand functionality
-# four of a kind burns pile 
+## Special Cards
 
-# implement stronger ai behaviour
-# implement ability pregame selecition of amount of players
+Note: Special cards can be played at anytime
 
-# implement pygame gui
+- 2: Play this card and an additional card.
+- 3: Mimic the card on the top of the pile.
+- 7: Cards must be lower than 7 to be played.
+- 10: Burn the pile.
+
+## How to run locally on Linux
+
+From terminal run 'python3 -m cli.main'
+
+## Current Bugs
+
+- Implementation of special cards. 10 does not work cannot find method.
+- Does not pickup cards after playing a special card.
